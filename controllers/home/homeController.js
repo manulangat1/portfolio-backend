@@ -2,6 +2,9 @@ import { HomeService } from '../../services'
 import responseHandler from '../../helpers/responsehandler'
 
 export default class HomeController{
+    static async homeS(req,res){
+        return responseHandler(res,'Home Created',200,{"m":"s"});
+    }
     static async createHome(req,res){
         const { title,content } = req.body;
         const homeDetails = {

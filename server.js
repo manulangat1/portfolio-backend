@@ -31,7 +31,7 @@ app.use('*', (req, res) => {
   })
 const PORT = process.env.PORT 
 
-// app.use('/',(req,res) => res.send('Hey'))
+// app.use('/',(req,res) => res.status(200).json('Hey'))
 
 // error middleware
 app.use((err, req, res, next) => {

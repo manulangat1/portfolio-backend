@@ -26,6 +26,7 @@ export default class UserService {
             const isPasswordMatch = await bcrypt.compareSync(password,user.password);
             if (isPasswordMatch){
                 const token = await jwt.sign(user.id,process.env.TOKEN_SECRET);
+                console.log(token)
                 const data = {
                     token,
                     user
