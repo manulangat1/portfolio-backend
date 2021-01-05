@@ -10,5 +10,3 @@ router.route('/').get(HomeController.homeS)
 
 
 export default router;
-
-// pp.use('/',(req,res) => res.status(200).json('Hey'))
