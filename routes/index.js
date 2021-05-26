@@ -1,10 +1,10 @@
 import { Router} from 'express';
-import user from './user';
-import home from './home_routes';
-import about from './about_routes';
-import projects from './project_routes';
-import blog from './blog_routes';
-import aws from './aws'
+import user from './user.js';
+import home from './home_routes.js';
+import about from './about_routes.js';
+import projects from './project_routes.js';
+import blog from './blog_routes.js';
+import aws from './aws.js'
 const router = new Router();
 
 router.use('/auth/',user);

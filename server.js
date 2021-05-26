@@ -5,10 +5,10 @@ import path from 'path'
 import morgan from 'morgan'
 import cors from 'cors'
 import bodyParser from 'body-parser'
-import routes from './routes'
+import routes from './routes/index.js'
 dotenv.config()
 
-import { handleError,ErrorHandler} from './helpers/errors/error'
+import { handleError,ErrorHandler} from './helpers/errors/error.js'
 
 
 const app = express()

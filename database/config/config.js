@@ -1,8 +1,7 @@
 require('dotenv').config()
-
 const dbConfig = {
 	development: {
-		use_env_variable: 'TEST_URL',
+		use_env_variable: 'DATABASE_URL',
 		dialect: 'postgres',
 		dialectOptions: {
 			ssl: {
@@ -12,7 +11,7 @@ const dbConfig = {
 		},
 	},
 	test: {
-		use_env_variable: 'TEST_URL',
+		use_env_variable: 'DATABASE_URL',
 		dialect: 'postgres',
 		dialectOptions: {
 			ssl: {
