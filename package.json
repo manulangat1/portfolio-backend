@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "server": "nodemon --experimental-specifier-resolution=node --exec babel-node ./server.js",
-    "start": "node --exec babel-node ./server.js"
+    "start": "nodemon --experimental-specifier-resolution=node --exec babel-node ./server.js"
   },
   "author": "EMMANUEL KIPCHIRCHIR LANGAT",
   "license": "MIT",

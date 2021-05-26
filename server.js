@@ -23,6 +23,9 @@ if (process.env.NODE_ENV === 'development'){
 // import and load routes 
 app.use('/',routes)
 
+app.get('/', res => {
+  res.status(200).json({"message":'Hello'})
+})
 
 app.use('*', (req, res) => {
     res.status(404).send({
