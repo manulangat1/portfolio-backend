@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "server": "nodemon --exec babel-node ./server.js",
-    "start": "nodemon --exec babel-node ./server.js"
+    "start": "node --exec babel-node ./server.js"
   },
   "author": "EMMANUEL KIPCHIRCHIR LANGAT",
   "license": "MIT",
@@ -37,6 +37,6 @@
     "nodemon": "^2.0.4"
   },
   "engines": {
-    "node": "10.16.0"
+    "node": "14.15.1"
   }
 }
