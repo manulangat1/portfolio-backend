@@ -1,6 +1,7 @@
 'use strict';
 import jwt from 'jsonwebtoken'
-import bcrypt from 'bcryptjs'
+// import bcrypt from 'bcryptjs'
+const bcrypt = require('bcryptjs')
 
 const genHash = (password) => {
   return bcrypt.hashSync(password,'10')
